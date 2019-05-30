@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.top-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: url(http://subtlepatterns.com/patterns/light_noise_diagonal.png);
+    user-select: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 18px;
+    line-height: 1.05em;
+    margin: 10px auto;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#plate {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+#form-menu {
+    width: 340px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.menu-form__inputs-wrapper {
+    margin-top: 20px;
+}
+
+.input-block {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input_check-box {
+    display: none;
+}
+.input_check-box:checked + label {
+    background-color: darkblue;
+    color: white;
+}
+.input_check-box:checked ~ .check-box_qnty-block {
+    display: block;
+}
+
+.input_qnty {
+    width: 40px;
+    height: 22px;
+    padding-left: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: lightblue;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.check-box__label {
+    width: 80px;
+    background-color: lightblue;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.7);
+    transition: all .1s ease-in-out;
+}
+.check-box__label:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+.check-box_qnty-block {
+    flex-grow: 1;
+    text-align: center;
+    display: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.check-box_qnty-block label {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 0 5px;
+}
+
+.table_task {
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 10px;
+}
+.table_task th, td {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 0 5px;
+}
+
+.table_task_1 th:first-of-type {
+    min-width: 230px;
+}
+.table_task_1 th:nth-of-type(2) {
+    width: 50px;
+    text-align: center;
+}
+
+.table_task_2 th {
+    min-width: 200px;
+}
+
+.task_article {
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+
+.submit-button {
+    float: right;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: lightgreen;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px rgba(0,0,0,.6);
+}
+
+.alert_block {
+    position: absolute;
+}
+
+/**OPTIONAL//////////////
+*/
+
+.flex-box {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-box.center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-box.right {
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex-box.between {
+    justify-content: space-between;
+}
+.flex-box.end {
+    align-items: flex-end;
+}
+.flex-box.top {
+    align-items: flex-start;
+}
+
+.indicate {
+    font-weight: bold;
+    color: darkred;
+}
+
+.right {
+    text-align: right;
+}
+
+.background_grey {
+    background-color: lightgray;
+}
+
+.text_shadowed {
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
